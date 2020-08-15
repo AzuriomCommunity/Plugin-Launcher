@@ -1,0 +1,14 @@
+{
+    "id": "launcher",
+    "name": "Launcher",
+    "description": "Launcher page Plugin",
+    "version": "1.0.0",
+    "url": "https://github.com/AzuriomCommunity/",
+    "authors": [
+        "Oximov"
+    ],
+    "providers": [
+        "\\Azuriom\\Plugin\\Launcher\\Providers\\LauncherServiceProvider",
+        "\\Azuriom\\Plugin\\Launcher\\Providers\\RouteServiceProvider"
+    ]
+}
