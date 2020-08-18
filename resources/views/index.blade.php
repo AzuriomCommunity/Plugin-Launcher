@@ -23,21 +23,21 @@
                 <img src="{{ plugin_asset('launcher', 'img/windows.png') }}"></img>
                 <p></p>
                 <h3>windows</h3>
-                <a href="#" class="btn-launcher">Télécharger</a>
+                <a href="#" class="btn-launcher">{{ trans('launcher::messages.download') }}</a>
             </div>
             <div class="launcher-plateform col-md-4">
                 <p></p>
                 <img src="{{ plugin_asset('launcher', 'img/apple.png') }}"></img>
                 <p></p>
                 <h3>mac os</h3>
-                <a href="#" class="btn-launcher">Télécharger</a>
+                <a href="#" class="btn-launcher">{{ trans('launcher::messages.download') }}</a>
             </div>
             <div class="launcher-plateform col-md-4">
                 <p></p>
                 <img src="{{ plugin_asset('launcher', 'img/linux.png') }}"></img>
                 <p></p>
                 <h3>linux</h3>
-                <a href="#" class="btn-launcher">Télécharger</a>
+                <a href="#" class="btn-launcher">{{ trans('launcher::messages.download') }}</a>
             </div>
         </div>
     </div>
