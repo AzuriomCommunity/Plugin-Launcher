@@ -10,5 +10,6 @@
     "providers": [
         "\\Azuriom\\Plugin\\Launcher\\Providers\\LauncherServiceProvider",
         "\\Azuriom\\Plugin\\Launcher\\Providers\\RouteServiceProvider"
-    ]
+    ],
+    "apiId": 81
 }
