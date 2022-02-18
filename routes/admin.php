@@ -1,5 +1,6 @@
 <?php
 
+use Azuriom\Plugin\Launcher\Controllers\Admin\LauncherAdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'AdminController@index');
+Route::get('/', [LauncherAdminController::class, 'show'])->name('settings');
+Route::post('/', [LauncherAdminController::class, 'save'])->name('settings.save');

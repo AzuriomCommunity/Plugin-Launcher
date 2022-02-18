@@ -13,6 +13,10 @@ class LauncherHomeController extends Controller
      */
     public function index()
     {
-        return view('launcher::index');
+        return view('launcher::index', [
+            'linux' => setting('launcher.linux'),
+            'windows' => setting('launcher.windows'),
+            'mac' => setting('launcher.mac'),
+        ]);
     }
 }

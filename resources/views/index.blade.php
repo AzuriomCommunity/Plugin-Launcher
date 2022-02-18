@@ -1,43 +1,49 @@
 @extends('layouts.app')
 
-@section('title', 'Launcher')
+@section('title', trans('launcher::messages.title'))
 
 @section('content')
-
-<link rel="stylesheet" type="text/css" href="{{ plugin_asset('launcher', 'css/style.css') }}">
-
     <div class="container content">
-        <h2 class="title">{{ trans('launcher::messages.title') }}</h2>
-        <br>
-        @if($server && ($playersCount = $server->getOnlinePlayers()) >= 0)
-            <p class="desc">{{ trans('launcher::messages.desc1') }}{{ $playersCount }}{{ trans('launcher::messages.desc2') }}</p>
-            <br>
-        @else
-            <h4 class="font-link">{{ trans('launcher::messages.serveroff') }}</h4>	
-            <br>				  
-		@endif
-
+        <p class="text-center">{{ trans('launcher::messages.description') }}</p>
         <div class="row">
-            <div class="launcher-plateform col-md-4">
-                <p></p>
-                <img src="{{ plugin_asset('launcher', 'img/windows.png') }}"></img>
-                <p></p>
-                <h3>windows</h3>
-                <a href="#" class="btn-launcher">{{ trans('launcher::messages.download') }}</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title text-center"><i class="fab fa-linux fa-3x"></i></h3>
+                        <br>
+                        <p class="text-center">
+                            <a href="{{ $linux }}" target="_blank">
+                                {{ strtoupper(trans('launcher::admin.os.linux')) }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="launcher-plateform col-md-4">
-                <p></p>
-                <img src="{{ plugin_asset('launcher', 'img/apple.png') }}"></img>
-                <p></p>
-                <h3>mac os</h3>
-                <a href="#" class="btn-launcher">{{ trans('launcher::messages.download') }}</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title text-center"><i class="fab fa-windows fa-3x"></i></h3>
+                        <br>
+                        <p class="text-center">
+                            <a href="{{ $windows }}" target="_blank">
+                                {{ strtoupper(trans('launcher::admin.os.windows')) }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="launcher-plateform col-md-4">
-                <p></p>
-                <img src="{{ plugin_asset('launcher', 'img/linux.png') }}"></img>
-                <p></p>
-                <h3>linux</h3>
-                <a href="#" class="btn-launcher">{{ trans('launcher::messages.download') }}</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title text-center"><i class="fab fa-apple fa-3x"></i></h3>
+                        <br>
+                        <p class="text-center">
+                            <a href="{{ $mac }}" target="_blank">
+                                {{ strtoupper(trans('launcher::admin.os.mac')) }}
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

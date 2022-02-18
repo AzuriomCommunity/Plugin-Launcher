@@ -1,5 +1,6 @@
 <?php
 
+use Azuriom\Plugin\Launcher\Controllers\LauncherHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'LauncherHomeController@index');
+Route::get('/', [LauncherHomeController::class, 'index']);
