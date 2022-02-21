@@ -5,13 +5,12 @@ return [
     "link_config" => "Links configuration",
     "os" => ["linux" => "Linux", "mac" => "Mac", "windows" => "Windows"],
     "plugin_settings" => "Plugin settings",
-    "title" => "Launcher",
-    "single_ressources" => "Single ressources mode",
-
     "single" => [
+        "custom_link" => "Custom ressource link",
         "display_name" => "Ressources name",
         "icon" => "Icon (FontAwesome)",
-        "link" => "Link",
-        "custom_link" => "Custom ressource link",
-    ]
+        "link" => "Link"
+    ],
+    "single_ressources" => "Single ressources mode",
+    "title" => "Launcher"
 ];
