@@ -11,7 +11,7 @@ class LauncherServiceProvider extends BasePluginServiceProvider
      *
      * @var array
      */
-    protected $middleware = [
+    protected array $middleware = [
         // \Azuriom\Plugin\Launcher\Middleware\ExampleMiddleware::class,
     ];
 
@@ -20,14 +20,14 @@ class LauncherServiceProvider extends BasePluginServiceProvider
      *
      * @var array
      */
-    protected $middlewareGroups = [];
+    protected array $middlewareGroups = [];
 
     /**
      * The plugin's route middleware.
      *
      * @var array
      */
-    protected $routeMiddleware = [
+    protected array $routeMiddleware = [
         // 'example' => \Azuriom\Plugin\Launcher\Middleware\ExampleRouteMiddleware::class,
     ];
 
@@ -36,7 +36,7 @@ class LauncherServiceProvider extends BasePluginServiceProvider
      *
      * @var array
      */
-    protected $policies = [
+    protected array $policies = [
         // User::class => UserPolicy::class,
     ];
 
@@ -97,10 +97,10 @@ class LauncherServiceProvider extends BasePluginServiceProvider
     {
         return [
             'launcher' => [
-                'name' => 'launcher::admin.title', // Traduction du nom de l'onglet
+                'name' => trans('launcher::admin.title'), // Traduction du nom de l'onglet
                 'icon' => 'fas fa-gamepad', // Icône FontAwesome
                 'route' => 'launcher.admin.settings', // Route de la page
-            ],
+            ]
         ];
     }
 
@@ -111,6 +111,8 @@ class LauncherServiceProvider extends BasePluginServiceProvider
      */
     protected function userNavigation()
     {
-        return [];
+        return [
+            //
+        ];
     }
 }

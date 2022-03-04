@@ -14,9 +14,9 @@
                     <label for="description">{{ trans('launcher::admin.custom_description') }}</label>
                     <input class="form-control" id="description" name="description" value="{{ $description }}">
                 </div>
-
-                <div class="form-group custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="enableSwitch" name="singleRessourceDisplay"
+                <br>
+                <div class="form-group custom-control form-switch">
+                    <input type="checkbox" class="form-check-input" id="enableSwitch" name="singleRessourceDisplay"
                            @if($type) checked @endif>
                     <label class="custom-control-label"
                            for="enableSwitch">{{ trans('launcher::admin.single_ressources') }}</label>

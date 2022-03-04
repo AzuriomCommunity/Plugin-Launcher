@@ -2,11 +2,12 @@
     "id": "launcher",
     "name": "launcher",
     "description": "Launcher plugin for Azuriom",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "url": "https://github.com/AzuriomCommunity/Plugin-Launcher",
     "authors": [
         "Oximov"
     ],
+    "azuriom_api": "1.0.0",
     "providers": [
         "\\Azuriom\\Plugin\\Launcher\\Providers\\LauncherServiceProvider",
         "\\Azuriom\\Plugin\\Launcher\\Providers\\RouteServiceProvider"

@@ -11,13 +11,13 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title text-center"><i class="{{ $icon }} fa-3x"></i></h3>
-                            <br>
-                            <p class="text-center text-uppercase">
-                                <a href="{{ $link }}" target="_blank">
+                            <a href="{{ $link }}" target="_blank">
+                                <h3 class="card-title text-center"><i class="{{ $icon }} fa-3x"></i></h3>
+                                <br>
+                                <p class="text-center text-uppercase">
                                     {{ $ressourceName }}
-                                </a>
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-4"></div>
@@ -26,39 +26,39 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title text-center"><i class="fab fa-linux fa-3x"></i></h3>
-                            <br>
-                            <p class="text-center text-uppercase">
-                                <a href="{{ $linux }}" target="_blank">
+                            <a href="{{ $linux }}" target="_blank">
+                                <h3 class="card-title text-center"><i class="fab fa-linux fa-3x"></i></h3>
+                                <br>
+                                <p class="text-center text-uppercase">
                                     {{ trans('launcher::admin.os.linux') }}
-                                </a>
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title text-center"><i class="fab fa-windows fa-3x"></i></h3>
-                            <br>
-                            <p class="text-center text-uppercase">
-                                <a href="{{ $windows }}" target="_blank">
+                            <a href="{{ $windows }}" target="_blank">
+                                <h3 class="card-title text-center"><i class="fab fa-windows fa-3x"></i></h3>
+                                <br>
+                                <p class="text-center text-uppercase">
                                     {{ trans('launcher::admin.os.windows') }}
-                                </a>
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title text-center"><i class="fab fa-apple fa-3x"></i></h3>
-                            <br>
-                            <p class="text-center text-uppercase">
-                                <a href="{{ $mac }}" target="_blank">
+                            <a href="{{ $mac }}" target="_blank">
+                                <h3 class="card-title text-center"><i class="fab fa-apple fa-3x"></i></h3>
+                                <br>
+                                <p class="text-center text-uppercase">
                                     {{ trans('launcher::admin.os.mac') }}
-                                </a>
-                            </p>
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
