@@ -98,7 +98,7 @@ class LauncherServiceProvider extends BasePluginServiceProvider
         return [
             'launcher' => [
                 'name' => trans('launcher::admin.title'), // Traduction du nom de l'onglet
-                'icon' => 'fas fa-gamepad', // Icône FontAwesome
+                'icon' => 'bi bi-controller', // Icône FontAwesome
                 'route' => 'launcher.admin.settings', // Route de la page
             ]
         ];

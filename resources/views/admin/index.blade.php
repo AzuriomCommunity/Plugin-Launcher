@@ -6,7 +6,7 @@
     <form action="{{ route('launcher.admin.settings') }}" method="POST">
         @csrf
         <h4>{{ trans('launcher::admin.plugin_settings') }}</h4>
-        <p><i class="fas fa-exclamation-triangle"></i> {{ trans('launcher::admin.custom_description_info') }}</p>
+        <p><i class="bi bi-exclamation-triangle"></i> {{ trans('launcher::admin.custom_description_info') }}</p>
         <div class="card shadow mb-4">
             <div class="card-body">
 
@@ -39,7 +39,7 @@
 
                     <div class="form-group">
                         <label for="icon">{{ trans('launcher::admin.single.icon') }}</label>
-                        <input class="form-control" id="icon" name="ressourceIcon" placeholder="Ex : fas fa-save" value="{{ $ressourceIcon }}">
+                        <input class="form-control" id="icon" name="ressourceIcon" placeholder="Ex : bi bi-save" value="{{ $ressourceIcon }}">
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
         @endif
 
         <button type="submit" class="btn btn-primary">
-            <i class="fas fa-save"></i> {{ trans('messages.actions.save') }}
+            <i class="bi bi-save"></i> {{ trans('messages.actions.save') }}
         </button>
     </form>
 @endsection
