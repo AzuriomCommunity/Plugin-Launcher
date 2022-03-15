@@ -40,6 +40,6 @@ class LauncherAdminController extends Controller
             'launcher.ressourceIcon' => $request->input('ressourceIcon'),
         ]);
 
-        return redirect()->route('launcher.admin.settings')->with('success', trans('admin.settings.status.updated'));
+        return redirect()->route('launcher.admin.settings')->with('success', trans('admin.settings.updated'));
     }
 }

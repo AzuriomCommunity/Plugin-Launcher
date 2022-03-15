@@ -6,19 +6,19 @@
     <form action="{{ route('launcher.admin.settings') }}" method="POST">
         @csrf
         <h4>{{ trans('launcher::admin.plugin_settings') }}</h4>
-        <p><i class="bi bi-exclamation-triangle"></i> {{ trans('launcher::admin.custom_description_info') }}</p>
         <div class="card shadow mb-4">
             <div class="card-body">
+                <p><i class="bi bi-exclamation-triangle"></i> {{ trans('launcher::admin.custom_description_info') }}</p>
 
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="description">{{ trans('launcher::admin.custom_description') }}</label>
                     <input class="form-control" id="description" name="description" value="{{ $description }}">
                 </div>
-                <br>
-                <div class="form-group custom-control form-switch">
+
+                <div class="mb-3 form-check form-switch">
                     <input type="checkbox" class="form-check-input" id="enableSwitch" name="singleRessourceDisplay"
                            @if($type) checked @endif>
-                    <label class="custom-control-label"
+                    <label class="form-check-label"
                            for="enableSwitch">{{ trans('launcher::admin.single_ressources') }}</label>
                 </div>
             </div>
@@ -27,19 +27,21 @@
             <h4>{{ trans('launcher::admin.single.custom_link') }}</h4>
             <div class="card shadow mb-4">
                 <div class="card-body">
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="ressourceName">{{ trans('launcher::admin.single.display_name') }}</label>
                         <input class="form-control" id="ressourceName" name="ressourceName" value="{{ $ressourceName }}">
                     </div>
 
-                    <div class="form-group">
-                        <label for="link">{{ trans('launcher::admin.single.link') }}</label>
+                    <div class="mb-3">
+                        <label for="link">{{ trans('messages.fields.link') }}</label>
                         <input class="form-control" id="link" name="ressourceLink" value="{{ $ressourceLink }}">
                     </div>
 
-                    <div class="form-group">
-                        <label for="icon">{{ trans('launcher::admin.single.icon') }}</label>
-                        <input class="form-control" id="icon" name="ressourceIcon" placeholder="Ex : bi bi-save" value="{{ $ressourceIcon }}">
+                    <div class="mb-3">
+                        <label for="icon">{{ trans('messages.fields.icon') }}</label>
+                        <input class="form-control" id="icon" name="ressourceIcon" placeholder="bi bi-save" value="{{ $ressourceIcon }}">
+
+                        <small class="form-text">@lang('messages.icons')</small>
                     </div>
                 </div>
             </div>
@@ -47,18 +49,18 @@
             <h4>{{ trans('launcher::admin.link_config') }}</h4>
             <div class="card shadow mb-4">
                 <div class="card-body">
-                    <div class="form-group">
-                        <label for="linux">{{ trans('launcher::admin.os.linux') }}</label>
+                    <div class="mb-3">
+                        <label for="linux">Linux</label>
                         <input class="form-control" id="linux" name="linux" value="{{ $linux }}">
                     </div>
 
-                    <div class="form-group">
-                        <label for="windows">{{ trans('launcher::admin.os.windows') }}</label>
+                    <div class="mb-3">
+                        <label for="windows">Windows</label>
                         <input class="form-control" id="windows" name="windows" value="{{ $windows }}">
                     </div>
 
-                    <div class="form-group">
-                        <label for="mac">{{ trans('launcher::admin.os.mac') }}</label>
+                    <div class="mb-3">
+                        <label for="mac">macOS</label>
                         <input class="form-control" id="mac" name="mac" value="{{ $mac }}">
                     </div>
                 </div>
