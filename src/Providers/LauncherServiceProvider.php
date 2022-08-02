@@ -52,7 +52,7 @@ class LauncherServiceProvider extends BasePluginServiceProvider
     {
         return [
             'launcher' => [
-                'name' => trans('launcher::admin.title'), // Traduction du nom de l'onglet
+                'name' => 'Launcher', // Traduction du nom de l'onglet
                 'icon' => 'bi bi-controller', // Icône Bootstrap Icons
                 'route' => 'launcher.admin.settings', // Route de la page
                 'permission' => 'launcher.manage'
