@@ -9,5 +9,8 @@ return [
         "display_name" => "Ressources name",
     ],
     "single_ressources" => "Single ressources mode",
-    "title" => "Launcher"
+    "title" => "Launcher",
+    'permissions' => [
+        'manage' => 'Manage Launcher plugin',
+    ],
 ];

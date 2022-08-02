@@ -3,6 +3,7 @@
 namespace Azuriom\Plugin\Launcher\Providers;
 
 use Azuriom\Extensions\Plugin\BasePluginServiceProvider;
+use Azuriom\Models\Permission;
 
 class LauncherServiceProvider extends BasePluginServiceProvider
 {
@@ -37,7 +38,9 @@ class LauncherServiceProvider extends BasePluginServiceProvider
 
         $this->registerUserNavigation();
 
-        //
+        Permission::registerPermissions([
+            'launcher.manage' => 'launcher::admin.permissions.manage',
+        ]);
     }
 
     /**
@@ -52,6 +55,7 @@ class LauncherServiceProvider extends BasePluginServiceProvider
                 'name' => trans('launcher::admin.title'), // Traduction du nom de l'onglet
                 'icon' => 'bi bi-controller', // Icône Bootstrap Icons
                 'route' => 'launcher.admin.settings', // Route de la page
+                'permission' => 'launcher.manage'
             ]
         ];
     }

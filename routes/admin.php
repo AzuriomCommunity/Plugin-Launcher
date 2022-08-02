@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LauncherAdminController::class, 'show'])->name('settings');
-Route::post('/', [LauncherAdminController::class, 'save'])->name('settings.save');
+Route::middleware('can:launcher.manage')->group(function () {
+    Route::get('/', [LauncherAdminController::class, 'show'])->name('settings');
+    Route::post('/', [LauncherAdminController::class, 'save'])->name('settings.save');
+});
