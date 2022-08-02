@@ -9,7 +9,6 @@ return [
         "display_name" => "Nom de la ressources",
     ],
     "single_ressources" => "Mode ressources uniques",
-    "title" => "Launcher",
     'permissions' => [
         'manage' => 'Gérer le plugin Launcher',
     ],

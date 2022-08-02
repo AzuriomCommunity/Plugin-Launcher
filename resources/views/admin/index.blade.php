@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin')
 
-@section('title', trans('launcher::admin.title'))
+@section('title', 'Launcher')
 
 @section('content')
     <form action="{{ route('launcher.admin.settings') }}" method="POST">

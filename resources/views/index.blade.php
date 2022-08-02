@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', trans('launcher::messages.title'))
+@section('title', 'Launcher')
 
 @section('content')
     <p class="text-center">{{ empty($description) ? trans('launcher::messages.description') : $description }}</p>
