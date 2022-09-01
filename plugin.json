@@ -2,7 +2,7 @@
     "id": "launcher",
     "name": "Launcher",
     "description": "Launcher plugin for Azuriom",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "url": "https:\/\/github.com\/AzuriomCommunity\/Plugin-Launcher",
     "authors": [
         "Oximov"
