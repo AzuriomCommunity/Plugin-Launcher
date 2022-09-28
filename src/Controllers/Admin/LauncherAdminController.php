@@ -24,6 +24,9 @@ class LauncherAdminController extends Controller
             'ressourceName' => setting('launcher.ressourceName'),
             'ressourceLink' => setting('launcher.ressourceLink'),
             'ressourceIcon' => setting('launcher.ressourceIcon'),
+            'linuxEnabled' => setting('launcher.linuxEnabled', false),
+            'windowsEnabled' => setting('launcher.windowsEnabled', false),
+            'macEnabled' => setting('launcher.macEnabled', false),
         ]);
     }
 
@@ -38,6 +41,9 @@ class LauncherAdminController extends Controller
             'launcher.ressourceName' => $request->input('ressourceName'),
             'launcher.ressourceLink' => $request->input('ressourceLink'),
             'launcher.ressourceIcon' => $request->input('ressourceIcon'),
+            'launcher.linuxEnabled' => $request->filled('displayLinux'),
+            'launcher.windowsEnabled' => $request->filled('displayWindows'),
+            'launcher.macEnabled' => $request->filled('displayMac'),
         ]);
 
         return redirect()->route('launcher.admin.settings')->with('success', trans('admin.settings.updated'));

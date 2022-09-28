@@ -54,14 +54,32 @@
                         <input class="form-control" id="linux" name="linux" value="{{ $linux }}">
                     </div>
 
+                    <div class="mb-3 form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="displayLinux" name="displayLinux"
+                               @if($linuxEnabled) checked @endif>
+                        <label class="form-check-label" for="displayLinux">{{ trans('launcher::admin.hide_this') }}</label>
+                    </div>
+
                     <div class="mb-3">
                         <label for="windows">Windows</label>
                         <input class="form-control" id="windows" name="windows" value="{{ $windows }}">
                     </div>
 
+                    <div class="mb-3 form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="displayWindows" name="displayWindows"
+                               @if($windowsEnabled) checked @endif>
+                        <label class="form-check-label" for="displayWindows">{{ trans('launcher::admin.hide_this') }}</label>
+                    </div>
+
                     <div class="mb-3">
                         <label for="mac">macOS</label>
                         <input class="form-control" id="mac" name="mac" value="{{ $mac }}">
+                    </div>
+
+                    <div class="mb-3 form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="displayMac" name="displayMac"
+                               @if($macEnabled) checked @endif>
+                        <label class="form-check-label" for="displayMac">{{ trans('launcher::admin.hide_this') }}</label>
                     </div>
                 </div>
             </div>

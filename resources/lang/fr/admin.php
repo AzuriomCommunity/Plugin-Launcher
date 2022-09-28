@@ -4,6 +4,7 @@ return [
     "custom_description_info" => "Le champ de description sera affiché à la place de la description par défaut.",
     "link_config" => "Configuration des liens",
     "plugin_settings" => "Paramètres du plugin",
+    "hide_this" => "Masquer cet élément",
     "single" => [
         "custom_link" => "Lien de ressource personnalisé",
         "display_name" => "Nom de la ressources",

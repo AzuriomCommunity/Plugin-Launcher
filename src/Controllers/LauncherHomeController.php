@@ -22,6 +22,9 @@ class LauncherHomeController extends Controller
             'ressourceName' => setting('launcher.ressourceName'),
             'link' => setting('launcher.ressourceLink'),
             'icon' => setting('launcher.ressourceIcon'),
+            'linuxEnabled' => setting('launcher.linuxEnabled', false),
+            'windowsEnabled' => setting('launcher.windowsEnabled', false),
+            'macEnabled' => setting('launcher.macEnabled', false),
         ]);
     }
 }
