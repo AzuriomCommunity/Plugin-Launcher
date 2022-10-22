@@ -43,6 +43,13 @@ class LauncherServiceProvider extends BasePluginServiceProvider
         ]);
     }
 
+    protected function routeDescriptions()
+    {
+        return [
+            'launcher.index' => 'Launcher',
+        ];
+    }
+
     /**
      * Return the admin navigations routes to register in the dashboard.
      *

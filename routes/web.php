@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [LauncherHomeController::class, 'index']);
+Route::get('/', [LauncherHomeController::class, 'index'])->name('index');
