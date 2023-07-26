@@ -1,4 +1,4 @@
 <?php
 return [
-    "description" => "Auf dieser Seite kannst du einen Launcher oder Ressourcen für unseren Spieleserver herunterladen.",
+    "description" => "Auf dieser Seite können Sie einen Launcher oder Ressourcen für unseren Spieleserver herunterladen.",
 ];
